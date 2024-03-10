@@ -1,0 +1,81 @@
+<div id="home" class="body desktop-only">
+    <div class="carousel">
+        <div class="banner-container">
+          <div *ngFor="let banner of banners; let i = index" class="banner" [ngClass]="{ 'active': i === currentSlideIndex }" [ngStyle]="{'transform': i === currentSlideIndex ? 'translateX(0)' : 'translateX(100%)', 'opacity': i === currentSlideIndex ? 1 : 0, 'z-index': i === currentSlideIndex ? 1 : 0}">
+            <img [src]="banner" alt="Banner">
+          </div>
+        </div>
+      </div>
+    <div id="sobre" class="initial-project">
+        <div class="origins-text">
+            <h1>Como surgiu a Escola passo a passo?</h1>
+            <p>Nossa escola surgiu do imenso desejo de fazer a diferença no aprendizado e formação de cidadãos aptos.</p>
+            <p>Nossa abordagem pedagógica vai além do intelecto, priorizando também o bem estar emocional de nossos alunos. <br> 
+                Enfatizando a formação do indivíduo pensante e questionador, visando a criação de um caráter positivo cultural e social</p>
+        </div>
+        <div class="origins-image">
+            <img src="../../../assets/exams.png" alt="">
+        </div>
+    </div>
+    <div class="mission-values">
+        <div class="missions">
+            <h1>Visão</h1>
+            <p>Temos como visão o aprendizado saudável e a formação de indivíduos aptos</p>
+        </div>
+        <hr>
+        <div class="values">
+            <h1>Valores</h1>
+            <p>Temos como valores o aprendizado saudável e a formação de indivíduos aptos</p>
+        </div>
+        <hr>
+        <div class="mission">
+            <h1>Missão</h1>
+            <p>Temos como missão o aprendizado saudável e a formação de indivíduos aptos</p>
+        </div>
+    </div>
+    <div class="location">
+        <h1>Venha nos conhecer!</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1185.0425362315277!2d-44.25245439500474!3d-2.5095225864445543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68e00c12312d5%3A0xa437859a63b130d2!2sEscola%20Passo%20a%20Passo!5e0!3m2!1spt-BR!2sbr!4v1710088906037!5m2!1spt-BR!2sbr"
+        width="100%" height="450" style="border: 2px solid #104FC8; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <div id="avisos" class="notifications-board">
+        <h1>Mural de avisos</h1>
+        <div class="notifications-board-content">
+            <div>
+                <p>Período de <br> Provas</p>
+                <img src="../../../assets/exams.png" alt="">
+                <button class="see-more">Ver Mais</button>
+            </div>
+            <div>
+                <p>Início do <br> ano letivo</p>
+                <img src="../../../assets/academic-year.jpg" alt="">
+                <button class="see-more">Ver Mais</button>
+            </div>
+            <div>
+                <p>Período de <br> Matrículas</p>
+                <img src="../../../assets/back-to-school.png" alt="">
+                <button class="see-more">Ver Mais</button>
+            </div>
+        </div>
+    </div>
+    <div id="rematricula" class="registration">
+        <img src="../../../assets/enrollment.png" alt="">
+        <div class="text-registration">
+            <h1>Matrículas</h1>
+            <p>Realize sua matrícula de forma rápida através do nosso portal online.</p>
+            <button (click)="redirectToMatricula()">Matricular-se</button>
+        </div>
+        <div class="text-poem">
+            <p>No meio do caminho tinha uma pedra tinha 
+                uma pedra no meio do caminho tinha uma 
+                pedra no meio do caminho tinha uma pedra. 
+                Nunca me esquecerei desse acontecimento na
+                vida de minhas retinas tão fatigadas. 
+                Nunca me esquecerei que no meio do caminho tinha uma
+                pedratinha uma pedra no meio do caminho no
+                meio do caminho tinha uma pedra.</p>
+            <h1>Carlos Drummond de Andrade</h1>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,394 @@
+.body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 50px;
+}
+
+/* .banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.banner img {
+    width: 85%;
+}
+
+.banner i {
+    font-size: 30px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+} */
+
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 38vw;
+    margin: 0 auto; /* Centraliza o carrossel, ajuste conforme necessário */
+  }
+  
+  .banner-container {
+    display: flex;
+  }
+  
+  .banner {
+    flex: 0 0 100%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  }
+  
+  .banner.active {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .banner:not(.active) {
+    flex: 0 0 0;
+    transform: translateX(100%);
+    opacity: 0;
+    z-index: 0;
+  }
+  
+  .banner-container img {
+    width: 100%;
+    max-height: 100%;
+  }
+
+
+.initial-project {
+    width: 100vw;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #104FC8;
+    color: #fff;
+    padding: 7vw 0vw 7vw 0vw;
+    margin-top: 40px;
+}
+
+.origins-text {
+    width: 80%;
+    padding-left: 2%;
+    padding-bottom: 5%;
+}
+
+.origins-text h1 {
+    font-size: 3.3vw;
+    padding-bottom: 15px;
+}
+
+.origins-text p {
+    font-size: 1.8vw;
+    padding-top: 15px;
+}
+
+.origins-image {
+    width: 40%;
+}
+
+.origins-image img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px; 
+    width: 100%;
+    height: 100%;
+}
+
+.mission-values {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    
+}
+
+.mission-values hr {
+    width: 10%;
+    height: 0.2vw;
+    background-color: #1050c871;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+}
+
+
+.mission-values h1 {
+    font-size: 3vw;
+    text-align: center;
+    color: blue;
+}
+
+.mission-values p {
+    margin-top: 20px;
+    color: blue;
+    font-size: 1.2vw;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+.location {
+    position: relative;
+    text-align: center;
+    margin-top: 20px; 
+    margin-right: 15vw;
+    margin-left: 15vw;
+    margin-bottom: 300px;
+}
+
+.location h1 {
+    font-size: 3vw;
+    color: #104FC8;
+    margin-bottom: 100px; 
+}
+
+
+.notifications-board {
+    position: relative;
+    text-align: center;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-bottom: 300px;
+}
+
+.notifications-board h1 {
+    font-size: 3vw;
+    color: #104FC8;
+    margin-bottom: 100px; 
+}
+
+.notifications-board-content {
+    position: relative;
+    text-align: center;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+}
+
+.notifications-board-content div {
+    width: 100%; 
+    height: 100%;
+    display: inline-block; 
+    margin: 15px;
+    margin-bottom: 0px;
+    border: 2px solid #104FC8;
+    border-radius: 30px;
+    background-color: white; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.notifications-board-content div p {
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+    background-color: #104FC8;
+}
+
+.notifications-board-content div img {
+    max-width: 100%; 
+    display: block;
+    margin: auto; 
+    width: 100%;
+    height: 19.4vw;
+}
+
+.notifications-board-content div .see-more {
+    position: absolute; 
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 50px; 
+    background-color: #104FC8; 
+    color: white; 
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+
+
+.registration {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to right, #104FC8, rgba(183, 14, 42, 0.658)); 
+    overflow: hidden; 
+}
+
+.registration img {
+    width: 100%;
+    display: block;
+}
+
+.text-registration, .text-poem {
+    position: absolute;
+    color: #fff; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+.text-registration {
+    text-align: left;
+    top: calc(30%); 
+    left: 5vw;
+    width: 38%;
+}
+
+.text-registration h1 {
+    font-size: 5vw;
+}
+
+.text-registration p {
+    font-size: 3vw;
+}
+
+.text-registration button {
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #fff;
+    color: #104FC8;
+    font-size: 2vw;
+    border: none;
+    cursor: pointer;
+}
+
+.text-poem {
+    top: calc(20%);
+    right: 5vw;
+    background-color: #ffffff33;
+    border-radius: 25px;
+    padding: 50px;
+    width: 40%;
+    word-wrap: break-word;
+}
+
+.text-poem p {
+    font-size: 2vw;
+}
+
+.text-poem h1 {
+    font-style: italic;
+    margin-top: 15px;
+    font-size: 1.5vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        padding-bottom: 20px;
+    }
+
+    .banner i {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .mission-values {
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+
+    .mission-values hr {
+        margin-bottom: 8%;
+    }
+    
+    
+    .mission-values h1 {
+        font-size: 5vw;
+    }
+    
+    .mission-values p {
+        margin-top: 5px;
+        font-size: 2vw;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .location {
+        margin-right: 5vw;
+        margin-left: 5vw;
+        margin-bottom: 100px;
+    }
+
+    .location h1 {
+        font-size: 20px;    
+    }
+
+    .notifications-board {
+        margin-right: 5px;
+        margin-left: 5px; 
+        margin-bottom: 100px;
+    }
+
+    .notifications-board h1 {
+        font-size: 20px;
+        margin-bottom: 70px;
+    }
+
+    .notifications-board-content {            
+        flex-wrap: wrap; 
+    }
+    
+    .notifications-board-content div {
+        width: 40%;                
+        margin: 3px;
+        margin-bottom: 15px;                      
+    }
+
+
+    .notifications-board-content div p {
+        font-size: 10px;
+    }
+
+    .notifications-board-content div img {
+        max-width: 100%; 
+        display: block;
+        margin: auto; 
+        width: 100%;
+        height: 32vw;
+    }
+    
+    .notifications-board-content div .see-more {
+        padding: 3px 7px; 
+        font-size: 12px;
+    }
+
+    .registration {
+        position: relative;
+        width: 100%;
+        overflow: hidden; 
+    }
+       
+    .text-registration {
+        top: 30%; 
+        left: 5vw;
+    }
+
+    .text-registration button {
+        margin-top: 10px;  
+        padding: 2vw;
+        font-size: 3vw;
+    }
+
+    .text-poem {
+        right: 2vw;
+        padding: 5vw;
+    }
+
+    .text-poem h1 {
+        font-size: 2vw;
+        margin-top: 6px;
+    }
+
+}
