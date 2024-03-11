@@ -293,6 +293,23 @@
         padding-right: 2vw;
     }
 
+
+    .origins-text {
+        width: 80%;
+        padding-left: 2%;
+        padding-bottom: 0%;
+    }
+    
+    .origins-text h1 {
+        font-size: 4vw;
+        padding-bottom: 0px;
+    }
+    
+    .origins-text p {
+        font-size: 2.7vw;
+        padding-top: 15px;
+    }
+
     .mission-values {
         padding-left: 0px;
         padding-right: 0px;
